@@ -1,9 +1,9 @@
 # Tkinter Python Simple Calculator
-###Goal
+##Goal
 
 This is a Python program for a GUI Calculator made using the tkinter module.
 
-###Description
+##Description
 
 The initial implementation supports basic arithmetic operations: addition ("+"), subtraction ("-"), multiplication ("*"), and division ("/").
 
