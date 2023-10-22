@@ -11,7 +11,7 @@ class CalculatorWithGraph(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title('Calculator with Graph Plotting, Equation Solving, and Trigonometry')
-        self.geometry("800x650")
+        self.geometry("585x650")
         self.create_widgets()
 
     def create_widgets(self):
