@@ -10,7 +10,7 @@ import math
 class CalculatorWithGraph(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title('Calculator with Graph Plotting, Equation Solving, and Trigonometry')
+        self.title('MathMate: A Comprehensive Mathematical Utility')
         self.geometry("585x650")
         self.create_widgets()
 
