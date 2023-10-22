@@ -1,22 +1,32 @@
-# Tkinter Python Simple Calculator
-##Goal
+# MathMate: A Comprehensive Mathematical Utility
 
-This is a Python program for a GUI Calculator made using the tkinter module.
+## Goal
+MathMate aims to be more than just a calculator. It's a comprehensive tool designed to assist users with both simple and complex mathematical operations, plot functions, and educate users about various mathematical operations.
 
-##Description
+## Installation
+1. Ensure you have Python installed on your system.
+2. Clone the repository or download the source code.
+3. Navigate to the project directory.
+4. Install the required dependencies using the following command:
+```
+pip install -r requirements.txt
+```
+5. Run the program:
+```
+python tkinterEx.py
+```
 
-The initial implementation supports basic arithmetic operations: addition ("+"), subtraction ("-"), multiplication ("*"), and division ("/").
+## Features
 
-But we've now enhanced the capabilities of this calculator:
+### Already Implemented:
+- **Basic Arithmetic Operations**: Addition, subtraction, multiplication, and division.
+- **Error Handling**: The program validates input fields to ensure numeric values.
+- **Extended Operations**: Exponentiation, square root, modulo, and trigonometric functions (sin, cos, tan).
+- **Memory Functions**: Store, recall, add to, and subtract from a stored value.
+- **Equation Solving**: Input equations, such as quadratic equations, to obtain solutions.
+- **Graph Plotting**: Visualize functions to understand their behavior across different values.
 
-Error Handling: The program checks the input fields to ensure validity. Currently, only numeric values are accepted for the entries. Any non-numeric entry will be flagged with an error.
-
-Extended Operations: The calculator now also supports advanced operations such as exponentiation ("^"), square root ("√"), modulo ("%"), and trigonometric functions ("sin", "cos", "tan").
-
-Memory Functions: We've added memory functions to store, recall, add to, and subtract from a stored value.
-
-Equation Solving: Users can input equations (e.g., quadratic equations) to get solutions.
-
-Graph Plotting: The calculator also features a graph plotting capability. This allows users to visualize functions and understand how they behave across different values.
-
-This enhanced calculator is not just a simple arithmetic tool, but also a comprehensive mathematical utility that can be used for various advanced calculations and analyses.
+### To Be Implemented:
+- **Tutorial Section**: Educate users about different mathematical operations.
+- **Function Enhancements**: Improve the plotting capabilities and introduce 3D plots.
+- **Additional Operations**: Integrate more complex mathematical operations.
