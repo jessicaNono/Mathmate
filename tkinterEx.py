@@ -144,6 +144,7 @@ class CalculatorWithGraph(tk.Tk):
         except Exception as e:
             messagebox.showerror('Error', str(e))
 
+    
     def plot_graph(self):
         equation = self.equation_entry.get().replace('^', '**')
         if any(trig in equation for trig in ['sin', 'cos', 'tan']):
@@ -159,10 +160,18 @@ class CalculatorWithGraph(tk.Tk):
         for widget in self.canvas_frame.winfo_children():
             widget.destroy()
 
+        # Adjusting the height of the GUI window during plotting
+        current_width = self.winfo_width()
+        current_height = self.winfo_height()
+        increase_amount = 400  # amount by which to increase the height
+        new_height = current_height + increase_amount
+        self.geometry(f"{current_width}x{new_height}")
+
         canvas = FigureCanvasTkAgg(fig, master=self.canvas_frame)
         canvas_widget = canvas.get_tk_widget()
         canvas_widget.grid(row=0, column=0, sticky="nsew")
         canvas.draw()
+
 
 
 if __name__ == "__main__":
