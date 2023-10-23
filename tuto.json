@@ -1,0 +1,42 @@
+{
+    "addition": {
+        "symbol": "+",
+        "explanation": "Addition is the process of calculating the total of two or more numbers or amounts. For example, adding 3 and 5 gives 8."
+    },
+    "subtraction": {
+        "symbol": "-",
+        "explanation": "Subtraction involves taking one number away from another. For instance, subtracting 5 from 8 results in 3."
+    },
+    "multiplication": {
+        "symbol": "*",
+        "explanation": "Multiplication is the act of increasing one number by the value of another. For example, multiplying 3 by 4 gives 12."
+    },
+    "division": {
+        "symbol": "÷",
+        "explanation": "Division is splitting a number into equal parts. Dividing 8 by 4, for instance, results in 2."
+    },
+    "power": {
+        "symbol": "^",
+        "explanation": "Raising a number to a power means multiplying the number by itself a certain number of times. 3 raised to the power of 2 (3^2) is 9 because 3 multiplied by itself once is 9."
+    },
+    "square_root": {
+        "symbol": "√",
+        "explanation": "The square root of a number is a value that, when multiplied by itself, gives the original number. For example, the square root of 9 is 3 because 3 times 3 equals 9."
+    },
+    "modulo": {
+        "symbol": "%",
+        "explanation": "The modulo operation finds the remainder when one number is divided by another. For instance, 7 modulo 3 equals 1 because when 7 is divided by 3, the remainder is 1."
+    },
+    "sine": {
+        "symbol": "sin",
+        "explanation": "The sine function relates an angle in a right triangle to the length of the side opposite the angle. It's commonly used in trigonometry."
+    },
+    "cosine": {
+        "symbol": "cos",
+        "explanation": "The cosine function relates an angle in a right triangle to the length of the side adjacent to the angle. It's another fundamental concept in trigonometry."
+    },
+    "tangent": {
+        "symbol": "tan",
+        "explanation": "The tangent function, in a right triangle, is the ratio of the side opposite the angle to the side adjacent. It's the division of sine by cosine."
+    }
+}
