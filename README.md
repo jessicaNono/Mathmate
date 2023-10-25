@@ -1,4 +1,5 @@
-# MathMate: A Comprehensive Mathematical Utility
+# MathMate: A Comprehensive Mathematical Utility 
+### Join the discord: https://discord.gg/2fCuQMvj7v
 
 ## Goal
 MathMate aims to be more than just a calculator. It's a comprehensive tool designed to assist users with both simple and complex mathematical operations, plot functions, and educate users about various mathematical operations.
