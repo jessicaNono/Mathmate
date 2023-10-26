@@ -1,5 +1,6 @@
-future~=0.18.2
-numpy~=1.26.0
-matplotlib~=3.8.0
-sympy~=1.12
+future
+numpy
+matplotlib
+sympy
 pyqt5
+json
