@@ -1,7 +1,7 @@
 import sys
-from PyQt5.QtWidgets import QApplication,QTextEdit, QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QLineEdit, QLabel
-from PyQt5.QtGui import QFont
-from utils.functions import on_operation_button_clicked
+from PyQt5.QtWidgets import QApplication, QTextEdit, QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QLineEdit, QLabel
+from PyQt5.QtGui import QFont, QIcon
+from utils.functions import on_operation_button_clicked, handle_equals_button_click
 
 class MathMateGUI(QWidget):
     def __init__(self):
@@ -33,11 +33,12 @@ class MathMateGUI(QWidget):
         self.description_text = QTextEdit(self)
         self.description_text.setFont(QFont('Arial', 16))
         self.main_layout.addWidget(self.description_text,5)  # 30% of the width
-        self.description_text.setPlaceholderText("Select an operation to see its description and example.")
+        self.description_text.setPlaceholderText("Description")
 
         # Set the window properties
         self.setGeometry(100, 100, 1200, 700)
         self.setWindowTitle('MathMate')
+        self.setWindowIcon(QIcon('logo.png'))  # Set the window icon
         self.show()
 
     def add_operation_buttons(self):
@@ -53,6 +54,13 @@ class MathMateGUI(QWidget):
             operation_layout.addWidget(button)
 
         # Add the operation buttons layout to the input_buttons_result_layout
+        equals_button = QPushButton('=', self)
+        equals_button.setFont(QFont('Arial', 16))
+        equals_button.setStyleSheet("background-color: grey")
+        equals_button.clicked.connect(self.handle_equal_click)  # Connect to a different method if needed
+        operation_layout.addWidget(equals_button)
+
+        # Add the operation buttons layout to the input_buttons_result_layout
         self.input_buttons_result_layout.addLayout(operation_layout)
 
     def handle_button_click(self):
@@ -60,6 +68,11 @@ class MathMateGUI(QWidget):
         button = self.sender()
         if button:
             on_operation_button_clicked(self, button)
+    def handle_equal_click(self):
+
+        button = self.sender()
+        if button:
+            handle_equals_button_click(self, button)
 
 
 if __name__ == '__main__':
